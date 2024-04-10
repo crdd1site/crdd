@@ -1,0 +1,70 @@
+@import '../../style/__variaveis';
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    font-family: $fontePadrao;
+    
+}
+
+@media screen and (min-width: $medio) {
+    .titulo {
+        text-align: center;
+        font-size: 16pt;
+        border-bottom: 1px solid black;
+
+        p {
+            padding: 2px 0;
+        }
+    }
+
+    .centerBlock {
+        display: flex;
+        flex-direction: row;
+        height: -webkit-fill-available;
+        margin: 0;
+        background-color: grey;
+    }
+
+    .menu {
+        position: absolute;
+        width: 250px;
+        max-height: 500px;
+        background-color: $fundoPadraoClaro;
+    }
+
+    .actionBlock {
+        width: max-content;
+        width: -webkit-fill-available;
+        min-height: 70vh;
+        margin-top: 18px;
+        margin-left: 270px;
+        margin-right: 10vw;
+        margin-bottom: 50px;
+    }
+
+    .line1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        .countGrt {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+        }
+        .pendencia {
+            width: 48%;
+        }
+        .graficogrt{
+            width: 48%;
+        }
+        .graficouso {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: $pequeno) {}
